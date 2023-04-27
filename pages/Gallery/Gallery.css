@@ -1,0 +1,40 @@
+.gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)) ;
+    grid-auto-rows: 250px;
+    width: 100%;
+    padding: 2rem;
+    gap: 2rem;
+
+    
+}
+
+.photo-gallery > figure {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.photo-gallery > figure :hover {
+    color: var(--color-secundary);
+    font-weight: 600;
+}
+
+.photo-gallery > figure > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.figcaption {
+    cursor:auto;
+}
